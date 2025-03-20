@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+@import "tailwindcss";
+
+:root {
+  /* #Colors/ */
+
+  /* #Primary */
+
+  --Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+
+  /* Neutral */
+
+  --Light-Grayish-Cyan-Background: hsl(180, 52%, 96%);
+  --Light-Grayish-Cyan-Filter-Tablets: hsl(180, 31%, 95%);
+  --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+  --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.jobCompany {
+  color: var(--Desaturated-Dark-Cyan);
+  font-weight: 500;
+}
+.jobNew {
+  background: var(--Desaturated-Dark-Cyan);
+  color: #fff;
+}
+.jobFeatured {
+  background: var(--Very-Dark-Grayish-Cyan);
+  color: #fff;
+}
+.jobPosition {
+  font-size: 1.2rem;
+}
