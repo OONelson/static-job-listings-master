@@ -157,65 +157,51 @@ const Jobs = [
 interface IJobListingsProps {}
 
 const JobListings: React.FunctionComponent<IJobListingsProps> = () => {
-  const MainContainerStyles = {
-    background: "var(--Desaturated-Dar-Cyan)",
-    width: "80%",
-    margin: "5rem 0 5rem 0",
-  };
-
-  const ContainerStyles = {
-    background: "#fff",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    margin: "1rem 0 1rem 0",
-    padding: "1rem",
-  };
-
-  const SubContainerStyles = {
-    width: "25%",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-  };
-
   return (
     <>
-      <section style={MainContainerStyles}>
+      <main className="w-[80%] ">
         {Jobs.map((job) => (
-          <article style={ContainerStyles} key={job.id}>
-            <div style={SubContainerStyles}>
-              <img src={job.logo} alt={job.company} />
-              <div>
-                <div className="flex justify-between w-[80%]">
-                  <h4 className="jobCompany">{job.company}</h4>
-                  <span className="jobNew">{job.new && <span>New</span>}</span>
-                  <span className="jobFeatured">
-                    {job.featured && <span>Featured</span>}
-                  </span>
-                </div>
-                <h2 className="jobPosition">{job.position}</h2>
-                <div className="text-slate-400">
-                  <span>{job.postedAt}</span> . <span>{job.contract}</span> .
-                  <span>{job.location}</span>
+          <section className="bg-Desaturated-Dark-Cyan my-20 w-full ">
+            <article
+              className="bg-white flex justify-between items-center my-4 p-4"
+              key={job.id}
+            >
+              <div className="w-[25%] flex justify-between items-center">
+                <img src={job.logo} alt={job.company} />
+                <div>
+                  <div className="flex justify-between w-[80%]">
+                    <h4 className="">{job.company}</h4>
+                    <span className="">{job.new && <span>New</span>}</span>
+                    <span className="">
+                      {job.featured && <span>Featured</span>}
+                    </span>
+                  </div>
+                  <h2 className="">{job.position}</h2>
+                  <div className="text-slate-400">
+                    <span>{job.postedAt}</span> . <span>{job.contract}</span> .
+                    <span>{job.location}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <span>{job.role}</span>
-              <span>{job.level}</span>
-              <span>{job.languages}</span>
               <div>
-                {job.tools.map((tool) => (
-                  <span>{tool}</span>
-                ))}
+                <span>{job.role}</span>
+                <span>{job.level}</span>
+                <div>
+                  {job.languages.map((language) => (
+                    <span>{language}</span>
+                  ))}
+                </div>
+                <div>
+                  {job.tools.map((tool) => (
+                    <span>{tool}</span>
+                  ))}
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </section>
         ))}
-      </section>
+      </main>
     </>
-    // </main>
   );
 };
 

@@ -7,7 +7,7 @@ interface IHomePageProps {}
 
 const HomePage: React.FunctionComponent<IHomePageProps> = () => {
   return (
-    <main className=" flex justify-center items-center flex-col bg-(--Light-Grayish-Cyan-Background)">
+    <main className="flex flex-col justify-between items-center bg-Light-Grayish-Cyan-Background ">
       <Header />
       <FilterBar />
       <JobListings />
