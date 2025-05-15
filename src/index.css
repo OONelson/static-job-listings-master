@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
+:root {
   --color-Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
 
   /* Neutral */
@@ -12,20 +14,9 @@
   --color-Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
 }
 
-:root {
-  /* #Colors/ */
-
-  /* #Primary */
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 body {
   font-family: "League Spartan", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
 }
 *,
 *::before,
