@@ -1,3 +1,5 @@
+import FilterBar from "./FilterBar";
+
 const Header: React.FC = () => {
   return (
     <main>
@@ -8,6 +10,7 @@ const Header: React.FC = () => {
           alt="bg"
         />
       </div>
+      <FilterBar />
     </main>
   );
 };
