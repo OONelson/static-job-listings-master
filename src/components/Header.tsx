@@ -1,18 +1,13 @@
-import * as React from "react";
-
-const Header: React.FunctionComponent = () => {
-  const bgImageStyles = {
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-  };
+const Header: React.FC = () => {
   return (
     <main>
-      <img
-        style={bgImageStyles}
-        src="../images/bg-header-desktop.svg"
-        alt="bg"
-      />
+      <div className="bg-[var(--color-Desaturated-Dark-Cyan)]">
+        <img
+          src="../images/bg-header-desktop.svg"
+          className="bg-center bg-auto"
+          alt="bg"
+        />
+      </div>
     </main>
   );
 };

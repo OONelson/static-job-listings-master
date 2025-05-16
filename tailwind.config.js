@@ -1,3 +1,5 @@
+import { heroui } from "@heroui/theme";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -10,5 +12,6 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  darkMode: "class",
+  plugins: [heroui()],
 };

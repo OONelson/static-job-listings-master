@@ -1,7 +1,6 @@
-import * as React from "react";
-import HomePage from "./components/HomePage";
+import HomePage from "./pages/HomePage";
 
-const App: React.FunctionComponent = () => {
+const App: React.FC = () => {
   return (
     <main>
       <HomePage />
